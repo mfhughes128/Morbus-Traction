@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/srvrName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:ems="8"
+        android:hint="@string/frag_net_srvr_name"
+        android:inputType="text"
+        android:selectAllOnFocus="true" >
+
+        <requestFocus />
+
+	</EditText>
+
+    <EditText
+        android:id="@+id/hostName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/srvrName"
+        android:layout_toRightOf="@+id/srvrName"
+        android:layout_marginLeft="10dp"
+        android:ems="8"
+        android:hint="@string/frag_net_srvr_field"
+        android:inputType="text"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:id="@+id/hostPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/srvrName"
+        android:layout_toRightOf="@+id/hostName"
+        android:layout_marginLeft="10dp"
+        android:ems="4"
+        android:hint="@string/frag_net_srvr_port"
+        android:inputType="number" />
+
+    <ToggleButton
+        android:id="@+id/srvrConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/srvrName"
+        android:layout_toRightOf="@+id/hostPort"
+        android:layout_marginLeft="18dp"
+        android:text="@string/frag_net_cnct_btn" />
+
+</RelativeLayout>

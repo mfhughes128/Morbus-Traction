@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RosterFragment" >
+
+    <EditText
+        android:id="@+id/dcdrName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:ems="12"
+        android:hint="@string/dcdr_name"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/dcdrTyp1"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dcdrName1"
+        android:layout_below="@+id/dcdrName1"
+        android:layout_marginTop="16dp"
+        android:ems="8"
+        android:hint="@string/dcdr_addr_typ"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/dcdrAdr1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dcdrTyp1"
+        android:layout_alignTop="@+id/dcdrTyp1"
+        android:layout_marginRight="5dp"
+        android:ems="8"
+        android:hint="@string/dcdr_addr"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/dcdrStep1"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dcdrTyp1"
+        android:layout_below="@+id/dcdrTyp1"
+        android:layout_marginTop="16dp"
+        android:ems="8"
+        android:hint="@string/dcdr_steps"
+        android:inputType="number" />
+
+    <ToggleButton
+        android:id="@+id/dcdrSel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/dcdrName1"
+        android:layout_alignTop="@+id/dcdrStep1"
+        android:layout_marginRight="16dp"
+        android:text="@string/dcdr_btn_txt"
+        android:textOff="@string/dcdr_btn_txt_acquire"
+        android:textOn="@string/dcdr_btn_txt_release" />
+    
+    <EditText
+        android:id="@+id/dcdrName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:ems="12"
+        android:hint="@string/dcdr_name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/dcdrTyp2"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dcdrName2"
+        android:layout_below="@+id/dcdrName2"
+        android:layout_marginTop="16dp"
+        android:ems="8"
+        android:hint="@string/dcdr_addr_typ"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/dcdrAdr2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dcdrTyp2"
+        android:layout_alignTop="@+id/dcdrTyp2"
+        android:layout_marginRight="5dp"
+        android:ems="8"
+        android:hint="@string/dcdr_addr"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/dcdrStep2"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dcdrTyp2"
+        android:layout_below="@+id/dcdrTyp2"
+        android:layout_marginTop="16dp"
+        android:ems="8"
+        android:hint="@string/dcdr_steps"
+        android:inputType="number" />
+
+    <ToggleButton
+        android:id="@+id/dcdrSel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/dcdrName2"
+        android:layout_alignTop="@+id/dcdrStep2"
+        android:layout_marginRight="16dp"
+        android:text="@string/dcdr_btn_txt"
+        android:textOff="@string/dcdr_btn_txt_acquire"
+        android:textOn="@string/dcdr_btn_txt_release" />
+    
+</RelativeLayout>
