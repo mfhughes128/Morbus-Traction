@@ -1,0 +1,264 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ThrottleFragment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#cccc"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/throttle_heading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:id="@+id/hdr_unit_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.80"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/idhint"
+            android:longClickable="false"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ToggleButton
+            android:id="@+id/BTNYARD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="0.20"
+            android:enabled="false"
+            android:text="@string/BTNYRD" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/throttle_body"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:id="@+id/fnc_btn_grp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" >
+
+            <TableRow>
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_weight="1"
+                    android:enabled="false" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_weight="1"
+                    android:enabled="false" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_weight="1"
+                    android:enabled="false" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/throttle_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/speed_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/spdhint"
+                android:longClickable="false"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <com.olinsdepot.od_traction.vertical_seekbar.VerticalSeekBar
+                android:id="@+id/Throttle"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:longClickable="false"
+                android:progressDrawable="@drawable/progress_vertical"
+                android:thumb="@drawable/seek_thumb" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/fnc_btn_grp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+
+            <TableRow>
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:enabled="false" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <com.rapsacnz.ToggleGroup
+        android:id="@+id/motion_btn_grp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/BTNREV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:enabled="false"
+            android:text="@string/BTNREV"
+            android:textOff="@string/BTNREV"
+            android:textOn="@string/BTNREV" />
+
+        <ToggleButton
+            android:id="@+id/BTNSTOP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:enabled="false"
+            android:text="@string/BTNSTOP"
+            android:textOff="@string/BTNSTOP"
+            android:textOn="@string/BTNSTOP" />
+
+        <ToggleButton
+            android:id="@+id/BTNFWD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:enabled="false"
+            android:text="@string/BTNFWD"
+            android:textOff="@string/BTNFWD"
+            android:textOn="@string/BTNFWD" />
+
+    </com.rapsacnz.ToggleGroup>
+
+</LinearLayout><!-- From: file:/C:/Users/mhughes/AndroidStudioProjects/OD_Traction/app/src/main/res/layout/fragment_throttle.xml -->
